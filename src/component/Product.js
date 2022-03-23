@@ -9,13 +9,13 @@ class Product extends React.Component{
     render(){
         const {id,title,img,price,inCart}=this.props.product;
         return(
-            <ProductWrapper className="col-9 col-md-6 col-lg-3">
+            <ProductWrapper className="col-9 col-md-6 col-lg-3 p-3 mx-auto">
                 <div className="card">
                     <ProductConsumer>
                         {(value)=>{
                             const cart=value
                          return(
-                             <div className="img-container p-5" onClick={()=>value.handleDetails(id)}>
+                             <div className="img-container p-5 mx-auto" onClick={()=>value.handleDetails(id)}>
                                 <Link to="/details">
                                 <img src={img} className="card-img-top" />
                                 </Link>

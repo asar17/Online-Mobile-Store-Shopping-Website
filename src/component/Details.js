@@ -10,9 +10,9 @@ class Details extends React.Component{
                     (value)=>{
                        const{id,company,img,info,price,title,inCart} =value.detailProducts;
                        return(
-                           <div className="container py-5">
+                           <div className="container py-5 ml-md-5">
                                <div className="row">
-                                   <div className="col-10 mx-auto text-center text-blue my-5 text-slanted">
+                                   <div className="col-10 mx-auto text-center ml-md-5 text-blue my-5 text-slanted">
                                       <h1>{title}</h1>
                                    </div>
                                </div>

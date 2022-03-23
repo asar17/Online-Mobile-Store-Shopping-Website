@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
+import PayPal from './PayPal'
 function CartTotal({value}){
     const {cartSubTotal,cartTotal,cartTax,clearCart}=value
     return(
